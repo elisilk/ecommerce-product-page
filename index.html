@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <meta name="description" content="Solution to Frontend Mentor's E-commerce product page design challenge.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="./scripts/script.js"></script>
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <div class="header-col header-col--main">
+          <div class="logo">
+            <a href="/">
+              <span class="visually-hidden">Sneakers</span>
+              <img src="images/logo.svg" alt="Sneakers logo" width="138" height="20">
+            </a>
+          </div>
+
+          <button id="nav-menu-control" aria-expanded="false" aria-controls="primary-nav">
+            <span class="visually-hidden">Primary navigation menu</span>
+            <img id="nav-menu-open" src="images/icon-menu.svg" alt=""/>
+            <img id="nav-menu-close" src="images/icon-close.svg" alt=""/>
+          </button>
+
+          <nav id="primary-nav" class="nav-menu nav-mobile-popup" aria-label="Primary">
+            <ul>
+              <li>
+                <a href="#">Collections</a>
+              </li>
+              <li>
+                <a href="#">Men</a>
+              </li>
+              <li>
+                <a href="#">Women</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <nav id="nav-secondary" aria-label="Secondary" class="nav-menu header-col header-col--aside">
+          <ul>
+            <li>
+              <button id="show-cart-btn" aria-expanded="false" aria-controls="cart">
+                <span class="visually-hidden">Show Cart</span>
+                <svg width="22" height="20" viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"  fill-rule="nonzero"/></svg>
+                <span id="items-in-cart" class="items-in-cart">3</span>
+              </button>
+              <div id="cart">
+                <h2>Cart</h2>
+                <div id="cart-content" class="cart-content">
+                  <ul class="cart-items">
+                    <li class="cart-item">
+                      <img src="images/image-product-1-thumbnail.jpg" alt="Product photo #1 thumbnail" class="cart-item__thumbnail">
+                      <div class="cart-item__text">
+                        <span class="cart-item__name">Fall Limited Edition Sneakers</span>
+                        <span class="cart-item__unit-price">$125.00</span> x <span class="cart-item__quantity">3</span>
+                        <span class="cart-item__total-price">$375.00</span>
+                      </div>
+                      <button class="cart-item__remove-btn">
+                        <span class="visually-hidden">Remove item from cart</span>
+                        <svg viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <defs><path d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z" id="a"/></defs><use fill-rule="nonzero" xlink:href="#a"/></svg>
+                      </button>
+                    </li>
+                  </ul>
+                  <button class="cart-btn">Checkout</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#" id="profile">
+                <span class="visually-hidden">Profile</span>
+                <img src="images/image-avatar.png" alt="Profile avatar" class="avatar">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main id="main-content" class="product-card">
+        <div class="product-photos">
+
+          <div class="gallery carousel">
+
+            <div class="gallery-viewing-area">
+              <div class="photo-controls">
+                <button id="carousel-control-prev" class="photo-control-btn">
+                  <span class="visually-hidden">Previous photo</span>
+                  <svg viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" fill="none" fill-rule="evenodd"/></svg>
+                </button>
+                <button id="carousel-control-next" class="photo-control-btn">
+                  <span class="visually-hidden">Next photo</span>
+                  <svg viewBox="0 0 13 18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" fill="none" fill-rule="evenodd"/></svg>
+                </button>
+              </div>
+
+              <ul id="carousel-photos-list" class="photos-list">
+                <li id="carousel-photo1" class="slide">
+                  <button><img src="images/image-product-1.jpg" alt="Product photo #1"></button>
+                </li>
+                <li id="carousel-photo2" class="slide">
+                  <button><img src="images/image-product-2.jpg" alt="Product photo #2"></button>
+                </li>
+                <li id="carousel-photo3" class="slide">
+                  <button><img src="images/image-product-3.jpg" alt="Product photo #3"></button>
+                </li>
+                <li id="carousel-photo4" class="slide">
+                  <button><img src="images/image-product-4.jpg" alt="Product photo #4"></button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="thumbnails-list">
+              <li>
+                <a href="#carousel-photo1" class="gallery-thumbnail carousel-thumbnail" data-photo-index="0"><img src="images/image-product-1-thumbnail.jpg" alt="Product photo #1 thumbnail"></a>
+              </li>
+              <li>
+                <a href="#carousel-photo2" class="gallery-thumbnail carousel-thumbnail" data-photo-index="1"><img src="images/image-product-2-thumbnail.jpg" alt="Product photo #2 thumbnail"></a>
+              </li>
+              <li>
+                <a href="#carousel-photo3" class="gallery-thumbnail carousel-thumbnail" data-photo-index="2"><img src="images/image-product-3-thumbnail.jpg" alt="Product photo #3 thumbnail"></a>
+              </li>
+              <li>
+                <a href="#carousel-photo4" class="gallery-thumbnail carousel-thumbnail" data-photo-index="3"><img src="images/image-product-4-thumbnail.jpg" alt="Product photo #4 thumbnail"></a>
+              </li>
+            </ul>
+          </div>
+
+          <dialog class="lightbox">
+            <div class="gallery">
+              <form method="dialog">
+                <button class="lightbox__close-button" autofocus>
+                  <span class="visually-hidden">Close</span>
+                  <svg viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/></svg>
+                </button>
+              </form>
+
+              <div class="gallery-viewing-area">
+                <div class="photo-controls">
+                  <button id="lightbox-control-prev" class="photo-control-btn">
+                    <span class="visually-hidden">Previous photo</span>
+                    <svg viewBox="0 0 12 18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" fill="none" fill-rule="evenodd"/></svg>
+                  </button>
+                  <button id="lightbox-control-next" class="photo-control-btn">
+                    <span class="visually-hidden">Next photo</span>
+                    <svg viewBox="0 0 13 18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" fill="none" fill-rule="evenodd"/></svg>
+                  </button>
+                </div>
+
+                <ul id="lightbox-photos-list" class="photos-list">
+                  <li id="lightbox-photo1" class="slide">
+                    <img src="images/image-product-1.jpg" alt="Product photo #1">
+                  </li>
+                  <li id="lightbox-photo2" class="slide">
+                    <img src="images/image-product-2.jpg" alt="Product photo #2">
+                  </li>
+                  <li id="lightbox-photo3" class="slide">
+                    <img src="images/image-product-3.jpg" alt="Product photo #3">
+                  </li>
+                  <li id="lightbox-photo4" class="slide">
+                    <img src="images/image-product-4.jpg" alt="Product photo #4">
+                  </li>
+                </ul>
+              </div>
+
+              <ul class="thumbnails-list">
+                <li>
+                  <a href="#lightbox-photo1" class="gallery-thumbnail lightbox-thumbnail" data-photo-index="0"><img src="images/image-product-1-thumbnail.jpg" alt="Product photo #1 thumbnail"></a>
+                </li>
+                <li>
+                  <a href="#lightbox-photo2" class="gallery-thumbnail lightbox-thumbnail" data-photo-index="1"><img src="images/image-product-2-thumbnail.jpg" alt="Product photo #2 thumbnail"></a>
+                </li>
+                <li>
+                  <a href="#lightbox-photo3" class="gallery-thumbnail lightbox-thumbnail" data-photo-index="2"><img src="images/image-product-3-thumbnail.jpg" alt="Product photo #3 thumbnail"></a>
+                </li>
+                <li>
+                  <a href="#lightbox-photo4" class="gallery-thumbnail lightbox-thumbnail" data-photo-index="3"><img src="images/image-product-4-thumbnail.jpg" alt="Product photo #4 thumbnail"></a>
+                </li>
+              </ul>
+            </div>
+          </dialog>
+        </div>
+
+        <div class="product-text">
+          <div class="eyebrow">Sneaker Company</div>
+          <h1 class="product__name">Fall Limited Edition Sneakers</h1>
+          <p class="product__desc">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="product__prices">
+            <span class="product__price-current">$125.00</span>
+            <span class="product__price-discount">50%</span>
+            <span class="product__price-original">$250.00</span>
+          </div>
+          <form id="add-to-cart-form" class="two-col "novalidate>
+            <div class="quantity-group">
+              <label for="quantity" class="visually-hidden">Quantity</label>
+              <input type="number" name="quantity" id="quantity" value="0" min="1" class="quantity-number-input">
+              <span id="quantity-error" class="error hidden" aria-live="polite"></span>
+              <button id="quantity-decrement" class="quantity-adjustor-btn">
+                <span class="visually-hidden">Decrease quantity</span><img src="images/icon-minus.svg" alt="minus sign icon" width="12" height="4"></button>
+              <button id="quantity-increment" class="quantity-adjustor-btn">
+                <span class="visually-hidden">Increase quantity</span><img src="images/icon-plus.svg" alt="plus sign icon" width="12" height="12"></button>
+            </div>
+            <button id="add-to-cart-btn" class="cart-btn cart-btn--add">Add to cart</button>
+          </form>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>

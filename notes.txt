@@ -1,0 +1,14 @@
+Stacking contexts
+
+#header > position: sticky
+
+.nav-mobile-popup > position: fixed
+.nav-mobile-popup::before > position: fixed + z-index: -1 + opacity: 0.5
+#nav-menu-close > position: absolute + z-index
+
+.photo-control-btn > transform + position: absolute + z-index
+
+
+.quantity-adjustor-btn > position: absolute
+
+.add-to-cart-btn::before > mask
