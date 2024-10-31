@@ -545,6 +545,7 @@ header {
 
 .gallery-viewing-area {
   position: relative;
+  max-height: 445px;
 }
 
 /* ----- Gallery Photos ----- */
@@ -568,6 +569,18 @@ header {
   /* position: relative; */
   flex: 0 0 100%;
   width: 100%;
+  height: 100%;
+}
+
+.photos-list button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.photos-list:has(button:focus-visible) {
+  outline: 2px dashed var(--clr-orange);
+  outline-offset: -2px;
 }
 
 /* ----- Gallery Thumbnails ----- */
@@ -957,19 +970,8 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .photos-list {
-    height: unset; /* 445px */
+    height: 100%; /* 445px */
     border-radius: 15px;
-  }
-
-  .photos-list button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-  }
-
-  .photos-list button:focus-visible img {
-    outline: 2px dashed var(--clr-orange);
-    outline-offset: -2px;
   }
 
   .thumbnails-list {

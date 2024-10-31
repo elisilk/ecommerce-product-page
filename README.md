@@ -85,6 +85,7 @@ More Fine-Grained Ideas:
 
 Specific areas that the solution should be improved (known issues):
 
+- Prevent the lightbox gallery from opening if the screen width is too small (< 425px)
 - Implement a "skip to main content" link
 - Consider using `<input type="text" inputmode="numeric">` instead of `<input type="number">` as an [alternative number input ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#using_number_inputs)
 - Implement container queries that determine when to break the quantity input and the add to cart onto separate rows (will help with the next one in terms of maintaining adequate space in the input number field)
