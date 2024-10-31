@@ -85,7 +85,16 @@ More Fine-Grained Ideas:
 
 Specific areas that the solution should be improved (known issues):
 
+- Implement a "skip to main content" link
+- Consider using `<input type="text" inputmode="numeric">` instead of `<input type="number">` as an [alternative number input ](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number#using_number_inputs)
+- Implement container queries that determine when to break the quantity input and the add to cart onto separate rows (will help with the next one in terms of maintaining adequate space in the input number field)
+- Lighthouse errors
+  - Increase the [touch target size](https://dequeuniversity.com/rules/axe/4.10/target-size) and spacing for the increase and decrease quantity buttons
+- Two errors in the HTML report
+  - (info) The "dialog" element is not supported in all browsers. Please be sure to test, and consider using a polyfill. `<dialog class="lightbox">`
+  - (error) Bad value "dialog" for attribute "method" on element "form". `<form method="dialog">`
 - Inside the number input field, hitting the return key should submit the form (add item to the cart), right? But now, it seems to just lower the input value by 1. Not sure why.
+- Show a "Thank you for shopping with us." message after checking out with the cart.
 
 More general ideas I want to consider:
 
