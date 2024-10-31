@@ -743,6 +743,8 @@ header {
   padding-inline: 1.5rem;
   display: grid;
   gap: 1rem;
+  container-type: inline-size;
+  width: 100%;
 }
 
 .eyebrow {
@@ -808,6 +810,10 @@ header {
 .two-col {
   display: grid;
   gap: 1rem;
+
+  @container (width > 400px) {
+    grid-template-columns: 157px 1fr;
+  }
 }
 
 input[type="number"] {
@@ -1035,7 +1041,7 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-basis: 100%;
   }
 
-  .two-col {
+  /* .two-col {
     display: flex;
     gap: 1rem;
   }
@@ -1046,7 +1052,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
   .two-col *:last-child {
     flex-basis: 272px;
-  }
+  } */
 }
 
 /* ----- Utilities ----- */
