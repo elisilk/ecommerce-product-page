@@ -30,11 +30,13 @@ Users should be able to:
 
 ### Screenshots
 
-|          Mobile designed at 375px:           |           Desktop designed at 1440px:           |
-| :------------------------------------------: | :---------------------------------------------: |
-|   ![](./screenshots/screenshot-mobile.png)   |    ![](./screenshots/screenshot-desktop.png)    |
-|             Mobile (completed):              |              Desktop (completed):               |
-| ![](./screenshots/screenshot-mobile-nav.png) | ![](./screenshots/screenshot-desktop-hover.png) |
+|           Mobile designed at 375px:           |            Desktop designed at 1440px:             |
+| :-------------------------------------------: | :------------------------------------------------: |
+|   ![](./screenshots/screenshot-mobile.png)    |     ![](./screenshots/screenshot-desktop.png)      |
+|                 Mobile (nav):                 |                Desktop (lightbox):                 |
+| ![](./screenshots/screenshot-mobile-nav.png)  | ![](./screenshots/screenshot-desktop-lightbox.png) |
+|                Mobile (cart):                 |                  Desktop (cart):                   |
+| ![](./screenshots/screenshot-mobile-cart.png) |   ![](./screenshots/screenshot-desktop-cart.png)   |
 
 ### Links
 
